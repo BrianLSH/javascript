@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const p1 = new Promise((resolve, reject) => {
+            resolve(2);
+        }).then( value => {return value*4})
+        .then(value => {return value*4})
+        .then(value => console.log(value))
+        .then(value => Promise.resolve('resolve'))
+        .then(value => console.log(value));
+
+
+    </script>
+
+
+
+
+</body>
+</html>

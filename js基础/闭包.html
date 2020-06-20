@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+     function fun(n, o) {
+        console.log(o);
+        return {
+            fun:function(m) {
+                return fun(m, n);
+            }
+        }
+     }  
+
+    //   var b = fun(0).fun(1).fun(2).fun(3);  //0 1 2    
+   // m1no n 1 o 0    m 2 n 1  n 2 o 1    m 3 n 2  n 3 o 2
+
+
+    //  var a = fun(0);
+    //  a.fun(1);//m 1 n 0
+    //  a.fun(2); // m2 n 0
+    //  a.fun(3); //m 3 n 0
+
+    
+                 
+     var c = fun(0).fun(1); // m 1 n 0 n 1 o 0   
+      c.fun(2); // m 2 n 1 n 2 o 1 
+      c.fun(3); //  m 3 n 1  n 3 o 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //     let f = function(a, b){
+    //         console.log('a=' + a);
+    //         // console.log('b=' + b);
+    //     }
+
+    //    f(1)
+
+
+
+    // //一个函数可以访问外部函数的内部变量，构成一个闭包环境
+    // var counter = function() {
+    //     let count = 1;
+    //     return function() {
+    //         return count ++;
+    //     }
+    // }
+    // let c = counter(); //return 的count++
+    // console.log(c);
+    // console.log(c());
+    // console.log(c());
+    // console.log(c());
+    // console.log(c());
+    // console.log(c());
+
+    </script>
+</body>
+
+</html>
