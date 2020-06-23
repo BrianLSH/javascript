@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+    let data = [
+    {id:2,name:'严嵩',age:15},
+    {id:3,name:'徐阶',age:17},
+    {id:4,name:'高拱',age:18},
+    {id:1,name:'张居正',age:12},
+]
+
+let res = data.findIndex(item => item.name === '张居正');
+
+if(res) {
+
+    console.log(res);
+}
+
+
+
+// let res = data.findIndex(item => item.name === '张居正');
+
+// if(res) {
+//     let {age} = res;
+//     console.log(age);
+   
+// }
+
+
+
+// let arr = [1, 2, 4, 0, -4, 3, -2, 9];
+// let res = arr.find( item => item > 9);
+
+// if (res) {
+//     console.log(res);
+// }
+// console.log(res);
+
+
+// var arr0 = ['a','b'];
+// var arr1 = [1,2,3];
+// // var arr2 = [4, ...arr1];
+// var arr3 = [...arr0 ,...arr1];
+// console.log(arr3)
+
+
+
+
+
+//      var arr1 = [1,2,3]
+// var arr2 = [...arr1]
+// console.log(arr2)
+    </script>
+</body>
+</html>

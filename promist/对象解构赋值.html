@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let obj = {name: 'zs', age: 20, gender: 'male'};
+
+let { name, ...a} = obj;
+
+console.log(name, a);
+
+
+
+
+// let {max,min,PI} = Math;
+
+// console.log(max, min, PI)
+
+
+
+
+
+// let res = {
+//     data: ['a', 'b', 'c'],
+//     meta: {
+//         code: 200,
+//         msg: '获取数据成功'
+//     }
+// }
+
+// let { meta: {code, msg}} = res;
+// console.log(code, msg)
+
+
+
+
+
+
+// let obj = {
+//     name: 'zahngsan',
+//     age: 23,
+//     dog: {
+//         name: 'mao',
+//         age: 3
+//     }
+// }
+
+// let { 'dog': {name, age}} = obj
+// console.log(age, name)
+
+
+//         let {b, name:a} = {name: '王阳明'};
+// console.log(b, a,name); 
+
+
+
+
+    </script>
+</body>
+</html>
