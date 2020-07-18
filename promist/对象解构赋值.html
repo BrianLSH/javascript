@@ -7,11 +7,13 @@
 </head>
 <body>
     <script>
-let obj = {name: 'zs', age: 20, gender: 'male'};
+// let obj = {name: 'zs', age: 20, gender: 'male'};
 
-let { name, ...a} = obj;
+// let { name, ...a} = obj;
+// console.log(name, a);
 
-console.log(name, a);
+// let {name} = obj;
+// console.log(name);
 
 
 
@@ -24,17 +26,19 @@ console.log(name, a);
 
 
 
-// let res = {
-//     data: ['a', 'b', 'c'],
-//     meta: {
-//         code: 200,
-//         msg: '获取数据成功'
-//     }
-// }
+let res = {
+    data: ['a', 'b', 'c'],
+    meta: {
+        code: 200,
+        msg: '获取数据成功'
+    }
+}
 
 // let { meta: {code, msg}} = res;
 // console.log(code, msg)
 
+// let {data} = res;
+// console.log(res);
 
 
 
@@ -48,6 +52,9 @@ console.log(name, a);
 //         age: 3
 //     }
 // }
+
+// let {dog: {name, age}} = obj;
+// console.log(name, age);
 
 // let { 'dog': {name, age}} = obj
 // console.log(age, name)

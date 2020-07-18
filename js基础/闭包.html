@@ -17,8 +17,11 @@
                 return fun(m, n);
             }
         }
-     }  
+     }      
+     let b = fun();
+     console.log(b);
 
+    //   var b = fun(0).fun(1).fun(2).fun(3); 
     //   var b = fun(0).fun(1).fun(2).fun(3);  //0 1 2    
    // m1no n 1 o 0    m 2 n 1  n 2 o 1    m 3 n 2  n 3 o 2
 
@@ -30,9 +33,9 @@
 
     
                  
-     var c = fun(0).fun(1); // m 1 n 0 n 1 o 0   
-      c.fun(2); // m 2 n 1 n 2 o 1 
-      c.fun(3); //  m 3 n 1  n 3 o 1
+    //  var c = fun(0).fun(1); // m 1 n 0 n 1 o 0   
+    //   c.fun(2); // m 2 n 1 n 2 o 1 
+    //   c.fun(3); //  m 3 n 1  n 3 o 1
 
 
 
