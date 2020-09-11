@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 构造函数：this指向当前实例对象<br>
+    方法里面的this 指向的是当前的调用者 实例对象obj调用this就是obj， 通过点击按钮调用，就是当前的元素对象 -->
+    <input type="button" value="点击" id="d1">
+
+    <script>
+        class B {
+            constructor(id) {
+                //获取dom元素对象 当做属性
+                this.element = document.querySelector(id);
+                
+                //绑定给元素不要加括号  加括号就要执行 
+                this.element.onclick = this.cli;
+
+            }
+
+            cli() {
+                console.log(this);
+            }
+
+            say(){
+                console.log(this)
+            }
+        }
+
+        var obj = new B('#d1');
+
+        console.log(obj) //B {element: input#d1}
+
+        // console.log(obj.element)
+
+        obj.cli(); //B {element: input#d1} 实例对象调用方法， 方法里面的this就是当前的实例对象
+
+
+
+    </script>
+</body>
+</html>

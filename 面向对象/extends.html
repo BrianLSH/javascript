@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 子类没有构造函数，子类可以直接用父类的，
+
+        class A {
+            constructor(name, age) {
+                this.name = name,
+                this.age = age
+            }
+
+            fly(){
+                console.log("我会飞")
+            }
+        }
+
+        class B extends A {
+
+            // 参数不够用， 就用super继承 然后传入多余的参数
+            // this 指向不同，所以用super 对象A this 和对象B 指向不同  在 new 的时候
+            constructor(name, age, sex){
+                super(name, age);
+                this.sex = sex
+            }
+
+            // var ob = new B('jack', 34,'男');
+            // 不屏蔽 传三个参数，  {name: "jack", age: 34, sex: "男"}
+            // 屏蔽传两个参数 {name: "jack", age: 34}
+
+            fly() {
+                super.fly();
+                console.log("我飞的更高");
+            }
+            
+        }
+
+        var ob = new B('jack', 34,'男');
+        console.log(ob);
+
+        ob.fly();
+
+
+
+
+    </script>
+</body>
+</html>

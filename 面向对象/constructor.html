@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//属性方法调用， 类外部用对象.属性 对象.方法   类内部用this.属性  this.方法
+
+        //定义类 class 关键字 首字母大写
+        //属性放在构造函数里面
+       
+        class Star {
+            constructor(username, age) {
+                this.name = username,
+                this.age = age
+                // this代表当前的实例对象，谁new 就代表谁
+                //此时 this 和ob 是同一个对象
+                // console.log(this)         // Star {name: "tom", age: 34}
+            }
+ //方法 直接往后放 但是不能加逗号
+            fly () {
+                console.log("我会飞")
+            }
+            swimming () {
+                console.log(this.name + "会游泳")
+            }
+            
+
+        }
+
+        var ob = new Star('zhangsan', 45);
+        (ob.swimming());
+  
+        // console.log(ob)         // Star {name: "tom", age: 34}
+
+        // console.log(ob.name)
+
+       
+        var ob1 = new Star('lisi', 54);
+        ob1.swimming();
+      
+
+    </script>
+</body>
+</html>
