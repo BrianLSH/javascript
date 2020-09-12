@@ -1,0 +1,215 @@
+/*
+盒子高度  内容高度+边框线高度+padding
+*/
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+
+.container {
+    padding-top:100px;
+    width: 1200px;
+    height: 300px;
+    margin:0px auto;
+    border: 1px solid red;
+   display: flex;
+    /* margin-top: 50px; */
+    /* background-color: red; */
+}
+
+.container .box {
+    margin: 0px auto;
+    width: 200px;
+    height:200px;
+    /* float: left; */
+    border: 1px solid red;
+}
+
+/* span 设置宽高无效 display block */
+.container .box-1 .pic {
+    margin-top: 30px;
+    width: 144px;
+    height: 80px;
+    background: pink url(./1.png) no-repeat;
+    display: block;
+    margin: 0px auto;
+    transition:all 0.5s;
+}
+
+.container .box-1 .pic:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.container .box-1 .button {
+    /* border: 2px solid red; */
+    /* 设置透明度  rgba  0 到1 之间*/
+    border: 2px solid rgba(63, 12, 12,0.5);
+    display: block;
+    width:180px;
+    margin: 20px auto;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: grey url(./arrow.png) no-repeat 30px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    position: relative;
+}
+
+.container .box-1 .button:hover {
+    border: 2px solid rgba(63, 12, 12,1);
+    background-position: -5px;
+}
+.box .line {
+    background-color:red;
+}
+
+.box .button .line-top {
+    /* width: 181px; */
+    /* width: 10px; */
+    width: 0px;
+    height:2px;
+    color: blue;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+.box .button:hover .line-top {
+left: -2px;
+width: 184px;
+}
+
+.box .button .line-bottom {
+    /* width: 181px; */
+    /* width: 10px; */
+    width: 0px;
+    height:2px;
+    color: blue;
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    transition: all 0.5s ease;
+}
+
+.box .button:hover .line-bottom {
+right: -2px;
+width: 183px;
+}
+
+.box .button .line-left {
+    width: 2px;
+    /* height: 10px; */
+    height: 0px;
+    display: block;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    top: -100%;
+    transition: all 0.5s ease;
+}
+
+.box .button:hover .line-left {
+    height: 84px;
+    top: -2px;
+    bottom: -2px;
+
+}
+
+
+.box .button .line-right
+ {
+    width: 2px;
+    /* height: 10px; */
+    height: 0px;
+    display: block;
+    position: absolute;
+    right: -2px;
+    top: 200%;
+    transition: all 0.5s ease;
+}
+
+.box .button:hover .line-right {
+    height: 82px;
+    top: -2px;
+    right: -2px;
+}
+
+
+
+
+
+
+
+
+/* container1的样式 */
+/* container1的样式 */
+/* container1的样式 */
+/* container1的样式 */
+/* container1的样式 */
+/* container1的样式 */
+/* container1的样式 */
+/* container1的样式 */
+
+.container1 {
+    width: 800px;
+    height: 300px;
+    margin:0px auto;
+    border: 1px solid red;
+    margin-top: 50px;
+    /* background-color: red; */
+}
+
+.container1 .box {
+    margin: 0px auto;
+    width: 200px;
+    height:200px;
+    /* margin: 0px 20px; */
+    border: 1px solid red;
+}
+
+/* span 设置宽高无效 display block */
+.container1 .box-1 .pic {
+    margin-top: 30px;
+    width: 144px;
+    height: 80px;
+    background: pink url(./1.png) no-repeat;
+    display: block;
+    margin: 0px auto;
+    transition:all 0.5s;
+}
+
+.container1 .box-1 .pic:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+.container1 .box-1 .button {
+    /* border: 2px solid red; */
+    /* 设置透明度  rgba  0 到1 之间*/
+    border: 2px solid rgba(63, 12, 12,0.1);
+    display: block;
+    width:180px;
+    margin: 30px auto;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: grey url(./arrow.png) no-repeat 30px;
+}
+
+.container1 .box-1 .button:hover {
+    border: 2px solid rgba(63, 12, 12,1);
+}
+
+
